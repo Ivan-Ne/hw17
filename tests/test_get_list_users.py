@@ -6,4 +6,3 @@ def test_get_list_users():
     page_id = 0
     response = requests.get(f'{url}/users?page={page_id}')
     assert response.status_code == 200
-    print(response.json())
